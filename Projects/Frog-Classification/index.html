@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Frog Classification - Serkan Kavak Dark Theme</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/highlight_v3.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Frog Classification";
+    var mkdocs_page_input_path = "Projects\\Frog-Classification.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Serkan Kavak Dark Theme</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Notes</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Notes/AI-in-General/">AI in General</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Notes/Computer-Science-in-General/">CS in General</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Notes/Linux-in-General/">Linux in General</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Notes/Python-in-General/">Python in General</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Notes/Reinforcement-Learning/">Reinforcement Learning</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Projects</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../Failed-Attempts-of-ASR/">ASR Failed Attempts</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Frog Classification</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#info-for-audio-signals-dataset-and-models">Info for Audio Signals, Dataset and Models</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Kaggle-Global-Wheat-Detection/">Kaggle Global Wheat Detection</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Kaldi-ASR/">Kaldi-ASR</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Serkan Kavak Dark Theme</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Projects &raquo;</li>
+        
+      
+    
+    <li>Frog Classification</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/serkankavak/edit/master/docs/Projects/Frog-Classification.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="frog-classification">Frog Classification</h1>
+<p>Classification of frog species from audio signals.</p>
+<p>Dataset for audio signals: <a href="http://learning.froghome.org/">Dataset</a></p>
+<p>An example project: <a href="https://github.com/mtobeiyf/audio-classification">Environmental Sound Classification</a>  </p>
+<ul>
+<li>It is not a good project. It uses the mean of each feature. It is not 2D CNN</li>
+</ul>
+<p>A better example from Aqib Saeed: <a href="http://aqibsaeed.github.io/2016-09-24-urban-sound-classification-part-2/">Urban Sound Classification</a></p>
+<h2 id="info-for-audio-signals-dataset-and-models">Info for Audio Signals, Dataset and Models</h2>
+<ul>
+<li>Tutorial for: <a href="http://www.practicalcryptography.com/miscellaneous/machine-learning/guide-mel-frequency-cepstral-coefficients-mfccs/">MFCC</a></li>
+<li>Norwegian guy: <a href="https://github.com/jonnor/machinehearing">JonNor</a></li>
+<li>Dataset for Environmental Sound Classification: <a href="https://github.com/karolpiczak/ESC-50">ESC-50</a></li>
+<li>A CNN model for sound classifications: <a href="https://gist.github.com/jaron">SBCNN</a></li>
+<li><a href="https://www.kaggle.com/huseinzol05/sound-augmentation-librosa">Augmentation</a></li>
+<li><a href="https://github.com/libphy/which_animal">Animal Classification</a> : using stacked MFCCs = MFCC, MFCC delta, MFCC delta 2</li>
+<li>Pre-trained model by Google: <a href="https://github.com/tensorflow/models/tree/master/research/audioset">AudioSet</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Kaggle-Global-Wheat-Detection/" class="btn btn-neutral float-right" title="Kaggle Global Wheat Detection">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Failed-Attempts-of-ASR/" class="btn btn-neutral" title="ASR Failed Attempts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Dark Theme is made by Serkan Kavak</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/serkankavak/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../Failed-Attempts-of-ASR/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Kaggle-Global-Wheat-Detection/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

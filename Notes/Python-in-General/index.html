@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Python in General - Serkan Kavak Dark Theme</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/highlight_v3.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Python in General";
+    var mkdocs_page_input_path = "Notes\\Python-in-General.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Serkan Kavak Dark Theme</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Notes</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../AI-in-General/">AI in General</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Computer-Science-in-General/">CS in General</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Linux-in-General/">Linux in General</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Python in General</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#matplotlib">Matplotlib</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#visualization-with-pandas">Visualization with Pandas</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dataframe-with-billions-of-rows-vaex">DataFrame with billions of rows: Vaex</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Reinforcement-Learning/">Reinforcement Learning</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Projects</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Projects/Failed-Attempts-of-ASR/">ASR Failed Attempts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Projects/Frog-Classification/">Frog Classification</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Projects/Kaggle-Global-Wheat-Detection/">Kaggle Global Wheat Detection</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Projects/Kaldi-ASR/">Kaldi-ASR</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Serkan Kavak Dark Theme</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Notes &raquo;</li>
+        
+      
+    
+    <li>Python in General</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/serkankavak/edit/master/docs/Notes/Python-in-General.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="python-in-general">Python in General</h1>
+<p>Useful information about libraries</p>
+<p>Change Jupyter notebook starting directory: <code>jupyter notebook --notebook-dir=D:</code></p>
+<h2 id="matplotlib">Matplotlib</h2>
+<ul>
+<li>Customizing style sheets</li>
+</ul>
+<p>Before Using Style:</p>
+<pre><code class="python">import numpy as np
+import matplotlib.pyplot as plt
+data = np.random.randn(50)
+plt.plot(data)
+plt.show()
+</code></pre>
+
+<p><img alt="Before Using Style" src="../images/python/matplotlib_1.png" /></p>
+<p>After Using Style:</p>
+<pre><code class="python">plt.style.use('ggplot')
+plt.plot(data)
+plt.show()
+</code></pre>
+
+<p><img alt="After Using Style" src="../images/python/matplotlib_2.png" /></p>
+<p>To see avaliable styles: <code>plt.style.available</code></p>
+<h2 id="visualization-with-pandas">Visualization with Pandas</h2>
+<pre><code class="python">import pandas as pd
+import seaborn as sns
+import numpy as np
+
+data = pd.DataFrame(np.random.rand(10, 4), columns=['A','B','C','D'])
+data
+</code></pre>
+
+<pre><code>        A           B           C           D
+0   0.271686    0.105439    0.473730    0.490360
+1   0.901196    0.785185    0.789935    0.746689
+2   0.561274    0.853798    0.442205    0.340178
+3   0.967522    0.254893    0.349356    0.314970
+4   0.981050    0.084075    0.652177    0.789420
+5   0.330425    0.005584    0.025657    0.345348
+6   0.847339    0.569559    0.668655    0.135351
+7   0.564038    0.855259    0.832140    0.530637
+8   0.087447    0.901836    0.190969    0.951888
+9   0.554184    0.211951    0.009899    0.312860
+</code></pre>
+
+<p>Plot line: <code>data.plot()</code>
+<img alt="1" src="../images/python/1-line.png" /></p>
+<p>Plot line with subplots: <code>data.plot(subplots=True,figsize=(12,12))</code>
+<img alt="2" src="../images/python/2-line-subs.png" /></p>
+<p>Plot line with layout of subplots: <code>data.plot(subplots=True,figsize=(12,12), layout=(2,2))</code>
+<img alt="3" src="../images/python/3-line-subs-layout.png" /></p>
+<p>Columns per row barplot: <code>data.plot.bar()</code><br />
+<img alt="4" src="../images/python/4-bar.png" /></p>
+<p>Columns per row stacked bar: <code>data.plot.bar(stacked=True)</code>
+<img alt="5" src="../images/python/5-bar-stacked.png" /></p>
+<p>Horizontal bar (remove stacked if no need): <code>data.plot.barh(stacked=True)</code>
+<img alt="6" src="../images/python/6-bar-horizontal.png" /></p>
+<p>Change color map before plotting if you want: </p>
+<pre><code class="python">sns.set_palette('magma')
+data.plot.barh(stacked=True)
+</code></pre>
+
+<p><img alt="7" src="../images/python/7-bar-cmap.png" /></p>
+<p>Plot the area:<code>data.plot.area()</code>
+<img alt="8" src="../images/python/8-area.png" /></p>
+<p>Area is plotted stacked in default. Without stack: <code>data.plot.area(stacked=False, alpha=0.5)</code>
+<img alt="9" src="../images/python/9-area-stacked.png" /></p>
+<p>Plot distribution: <code>data.plot.kde()</code>
+<img alt="10" src="../images/python/10-dist.png" /></p>
+<p>Plot scatter:</p>
+<pre><code class="python">data.plot.scatter(x='A',y='B',     #scatterplot x and y
+                  c='red',         #color of data points
+                  s=data['B']*200) #size of data points respect to values of B column
+</code></pre>
+
+<p><img alt="11" src="../images/python/11-scatter.png" /></p>
+<h2 id="dataframe-with-billions-of-rows-vaex">DataFrame with billions of rows: Vaex</h2>
+<p>Vaex is DataFrame library just like Pandas but waaaay better than Pandas if we have billions of rows.<br />
+<a href="https://github.com/vaexio/vaex">GitHub Page</a><br />
+<a href="https://towardsdatascience.com/how-to-process-a-dataframe-with-billions-of-rows-in-seconds-c8212580f447">Introduction</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Reinforcement-Learning/" class="btn btn-neutral float-right" title="Reinforcement Learning">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Linux-in-General/" class="btn btn-neutral" title="Linux in General"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Dark Theme is made by Serkan Kavak</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/serkankavak/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../Linux-in-General/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Reinforcement-Learning/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

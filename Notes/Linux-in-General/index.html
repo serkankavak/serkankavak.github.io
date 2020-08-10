@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Linux in General - Serkan Kavak Dark Theme</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/highlight_v3.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Linux in General";
+    var mkdocs_page_input_path = "Notes\\Linux-in-General.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Serkan Kavak Dark Theme</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Notes</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../AI-in-General/">AI in General</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Computer-Science-in-General/">CS in General</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Linux in General</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#cuda-cudnn-installation">CUDA &amp; cuDNN Installation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#useful-commands">Useful Commands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#list-users">List Users</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#task-manager-in-ubuntu-gnome-system-monitor-or-htop">Task Manager in Ubuntu: gnome-system-monitor or htop</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#the-address-of-an-installed-application-after-sudo-apt-get-install-dpkg-l-packagename">The address of an installed application after sudo apt-get install: dpkg -L &lt;packagename&gt;</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#record-your-voice-with-microphone">Record your voice with microphone</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#firewall-with-ufw">Firewall with UFW</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Python-in-General/">Python in General</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Reinforcement-Learning/">Reinforcement Learning</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Projects</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Projects/Failed-Attempts-of-ASR/">ASR Failed Attempts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Projects/Frog-Classification/">Frog Classification</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Projects/Kaggle-Global-Wheat-Detection/">Kaggle Global Wheat Detection</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Projects/Kaldi-ASR/">Kaldi-ASR</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Serkan Kavak Dark Theme</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Notes &raquo;</li>
+        
+      
+    
+    <li>Linux in General</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/serkankavak/edit/master/docs/Notes/Linux-in-General.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="linux-in-general">Linux in General</h1>
+<p>Here is my Linux cheat sheet, mainly on Ubuntu 18.04  </p>
+<p>Download: <code>http://ubuntu.cs.nctu.edu.tw/ubuntu-release/18.04.4/</code></p>
+<h2 id="cuda-cudnn-installation">CUDA &amp; cuDNN Installation</h2>
+<ul>
+<li><a href="https://medium.com/@exesse/cuda-10-1-installation-on-ubuntu-18-04-lts-d04f89287130">CUDA Installation</a></li>
+<li><a href="https://medium.com/repro-repo/install-cuda-10-1-and-cudnn-7-5-0-for-pytorch-on-ubuntu-18-04-lts-9b6124c44cc">cuDNN Installation and test</a></li>
+</ul>
+<h2 id="useful-commands">Useful Commands</h2>
+<h3 id="list-users">List Users</h3>
+<ul>
+<li>
+<p><code>cat /etc/passwd</code> Use it to see all the informations about each user. Each line in the file has seven fields delimited by colons that contain the following information:</p>
+<ul>
+<li>User name</li>
+<li>Encrypted password (x means that the password is stored in the /etc/shadow file)</li>
+<li>User ID number (UID)</li>
+<li>User’s group ID number (GID)</li>
+<li>Full name of the user (GECOS)</li>
+<li>User home directory</li>
+<li>Login shell (defaults to /bin/bash)</li>
+</ul>
+</li>
+<li>
+<p>Another way: <code>getent passwd</code></p>
+</li>
+<li>
+<p>To display only the usernames: <code>cut -d: -f1 /etc/passwd</code></p>
+</li>
+<li>
+<p>or <code>getent passwd | cut -d: -f1</code></p>
+</li>
+<li>
+<p>To check if a user exists in the Linux system: <code>getent passwd | grep username</code></p>
+</li>
+<li>Count the number of users: <code>getent passwd | wc -l</code></li>
+</ul>
+<hr />
+<h3 id="task-manager-in-ubuntu-gnome-system-monitor-or-htop">Task Manager in Ubuntu: <code>gnome-system-monitor</code> or <code>htop</code></h3>
+<h3 id="the-address-of-an-installed-application-after-sudo-apt-get-install-dpkg-l-packagename">The address of an installed application after sudo apt-get install: <code>dpkg -L &lt;packagename&gt;</code></h3>
+<h3 id="record-your-voice-with-microphone">Record your voice with microphone</h3>
+<ol>
+<li>Check the volume of your microphone first from <code>alsamixer</code></li>
+<li>Record your voice: <code>rec test.wav</code></li>
+<li>Ctrl+C to finish recording</li>
+</ol>
+<hr />
+<h2 id="firewall-with-ufw">Firewall with UFW</h2>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-18-04#step-6-%E2%80%94-denying-connections">General commands for UFW</a></li>
+<li><a href="https://linuxconfig.org/how-to-deny-icmp-ping-requests-on-ubuntu-18-04-bionic-beaver-linux">Deny ICMP ping request</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Python-in-General/" class="btn btn-neutral float-right" title="Python in General">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Computer-Science-in-General/" class="btn btn-neutral" title="CS in General"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Dark Theme is made by Serkan Kavak</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/serkankavak/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../Computer-Science-in-General/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Python-in-General/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
